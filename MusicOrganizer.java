@@ -170,4 +170,31 @@ public class MusicOrganizer
             addTrack(track);
         }
     }
+    
+    /**
+     * Enumerar todas las pistas que contengan la cadena de busqueda.
+     * @param searchString La cadena de busqueda que hay que encontrar.
+     */
+    public void findInTitle(String searchString)
+    {
+        for(Track track : tracks){
+            String title = track.getTitle();
+            if(title.contains(searchString)){
+                System.out.println(track.getDetails());
+            }
+        }
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 }
